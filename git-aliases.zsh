@@ -105,19 +105,21 @@ alias gplrs='git pull --recurse-submodules'
 # but abort if a file has uncommitted changes.
 # Having to type 'grhard' in full will make us think twice
 # about whether we REALLY want to get rid of all dirty files.
-alias gr='git reset --mixed' # Keep changes, but unstage them (`--mixed` = default behaviour)
-alias grhard='git reset --hard' # Remove changes, including anything uncommitted (Dangerous!)
-alias grk='git reset --keep' # Safer version of `--hard`: reset is aborted if a file is dirty
-alias grs='git reset --soft' # Keep changes, and keep them staged
+alias grs='git reset --mixed' # Keep changes, but unstage them (`--mixed` = default behaviour)
+alias grshard='git reset --hard' # Remove changes, including anything uncommitted (Dangerous!)
+alias grsk='git reset --keep' # Safer version of `--hard`: reset is aborted if a file is dirty
+alias grss='git reset --soft' # Keep changes, and keep them staged
 
 alias grb='git rebase'
 alias grbm='git rebase $(git_main_branch)'
-alias grem='git remote'
-alias grema='git remote add'
-alias gremrm='git remote rm'
-alias gremset='git remote set-url'
-alias gremsh='git remote show'
-alias gremv='git remote -v'
+
+alias gr='git remote'
+alias gra='git remote add'
+alias grr='git remote rm'
+alias grsu='git remote set-url'
+alias grsh='git remote show'
+alias grv='git remote -v'
+
 alias grl='git reflog' # Useful to restore lost commits after reset
 alias grm='git rm'
 
