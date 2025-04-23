@@ -148,13 +148,13 @@ alias gs='git status'
 alias gsh='git show --date=format:"%A %B %d %Y at %H:%M" --pretty=format:"%C(yellow)%H%Creset%x09%C(bold green)%D%Creset%n%<|(40)%C(white)%ad%x09%an%Creset%n%n    %C(bold)%s%Creset%n%w(0,4,4)%+b%n"'
 
 # git stash
-alias gst='git stash'
+alias gst='git stash' # = git stash push
 alias gsta='git stash apply'
 alias gstd='git stash drop'
 alias gstl='git stash list'
 alias gstls='git stash list | cat'
-alias gstp='git stash push'
-alias gstpop='git stash pop'
+alias gstm='git stash -m'
+alias gstp='git stash pop'
 # Show the diff between latest stash and local working tree:
 alias gstsl='git stash show -l' # = git diff stash@{0}
 # Show the diff between latest stash and its original parent commit:
